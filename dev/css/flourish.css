@@ -1,0 +1,201 @@
+/* ------ flourish.css ------ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800);
+
+body {
+    background:#0e1019;
+    font-family: 'Open Sans', sans-serif;    
+} 
+
+nav a {
+color:#fff !important;
+}
+
+#container {
+    position:relative;
+    margin:50px auto;
+    width:1280px;
+    
+}
+
+nav {
+    background-color:#20233a !important;
+    width:1280px;
+    height:210px;
+    box-shadow:none !important;
+}
+
+nav ul {
+    margin:0 10%;
+    display:block;
+    list-style:none;
+}
+
+nav ul li {
+    width:20%;
+    height:100%;
+    text-align:center;
+}
+
+nav ul li a {
+    height:160px;
+    opacity:0.2;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav ul li a:hover,nav ul li a.active {
+    opacity:1;
+}
+
+nav ul li:hover, nav ul li.active {
+        background-color:transparent !important; 
+}
+
+nav ul li a img {
+    clear:right;
+    margin:50px auto 0 auto;
+    display:block;
+}
+
+header {
+    width:1280px;
+    height:656px;
+    border-top:4px solid #2eaf5d;
+    display:block;
+}
+
+.slider {
+    height:656px;
+}
+
+.headerbg {
+    z-index:0;
+}
+
+#logo {
+    position:absolute;
+    top:64px;
+    left:80px;
+}
+
+#signin {
+    position:absolute;
+    top:64px;
+    right:100px;
+    background:rgba(0,0,0,0.4);
+    padding:14px 28px 11px 28px;
+    border-radius:50px;
+    z-index:1;
+}
+
+a#signin {
+    font-size:11pt;
+    color:#fff;
+}
+
+#signin img {
+    margin-right:15px;
+}
+
+#signin span {
+    vertical-align:top;
+}
+
+#sub nav {
+    background:transparent !important;
+}
+#sub header {
+    height:120px;
+}
+
+#sub nav {
+    background:transparent !important;
+}
+
+#sub header #logo {
+    top:40px;
+}
+
+#sub header #signin {
+    top:35px;
+}
+
+#content {
+    width:1280px;
+    padding:40px 100px;
+    background:#fff;
+}
+
+.prev,.next {
+    font-size:0pt;
+    width:29px;
+    height:35px;
+    margin-top:-325px;
+    opacity:0.3;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.prev:hover,.next:hover {
+    opacity:1;
+}
+
+.prev {
+    background:transparent url(../img/prev.png) no-repeat top left;
+}
+
+.next {
+    background:transparent url(../img/next.png) no-repeat top left;
+}
+
+#sub.servers #container {
+    background:transparent url(../img/bg3.png) no-repeat top left;
+}
+
+#sub.about #container {
+    background:transparent url(../img/bg2.png) no-repeat top left;
+}
+
+#sub.forum #container {
+    background:transparent url(../img/bg2.png) no-repeat top left;
+}
+
+#sub.hurtworld #container {
+    background:transparent url(../img/hurtworld.png) no-repeat top left;
+}
+
+
+h1 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+}
+
+h2 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+}
+
+h3 {
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+}
+
+.HomepageTitle,.PageDescription {
+    display:none !important; 
+    font-size:0pt !important;
+}
+
+.Meta .RSS {
+    display:none !important;
+}
+
+.MItem {
+    margin:0 !important;
+}

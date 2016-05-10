@@ -1,0 +1,311 @@
+/* ------ flourish.css ------ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800);
+
+body {
+    background:#0e1019;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+strong {
+    font-weight:700;
+}
+
+h1,h2,h3,h4 {
+    font-weight:700;
+}
+
+#container {
+    position:relative;
+    margin:50px auto;
+    max-width:1280px;  
+}
+
+nav {
+    background-color:#20233a !important;
+    max-width:1280px;
+    height:210px;
+    box-shadow:none !important;
+}
+
+nav ul {
+    margin:0 10%;
+    display:block;
+    list-style:none;
+}
+
+nav ul li {
+    width:20%;
+    height:100%;
+    text-align:center;
+}
+
+nav ul li a {
+    height:160px;
+    opacity:0.2;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav ul li a:hover,nav ul li a.active {
+    opacity:1;
+}
+
+nav ul li:hover, nav ul li.active {
+        background-color:transparent !important; 
+}
+
+nav ul li a img {
+    clear:right;
+    margin:50px auto 0 auto;
+    display:block;
+}
+
+header {
+    max-width:1280px;
+    border-top:4px solid #2eaf5d;
+    display:block;
+}
+
+.slider {
+    height:656px;
+}
+
+.headerbg {
+    z-index:0;
+}
+
+#logo {
+    position:absolute;
+    top:64px;
+    left:80px;
+}
+
+#signin {
+    position:absolute;
+    top:64px;
+    right:100px;
+    background:rgba(0,0,0,0.4);
+    padding:14px 28px 11px 28px;
+    border-radius:50px;
+    z-index:1;
+}
+
+a#signin {
+    font-size:11pt;
+    color:#fff;
+}
+
+#signin img {
+    margin-right:15px;
+}
+
+#signin span {
+    vertical-align:top;
+}
+
+#sub nav {
+    background:transparent !important;
+}
+#sub header {
+    height:120px;
+}
+.headerbg {
+    width:100%;
+    height:auto;
+}
+
+#sub nav {
+    background:transparent !important;
+}
+
+#sub header #logo {
+    top:40px;
+}
+
+#sub header #signin {
+    top:35px;
+}
+
+#content {
+    max-width:1280px;
+    padding:40px 100px;
+    background:#fff;
+}
+
+.prev,.next {
+    font-size:0pt;
+    width:29px;
+    height:35px;
+    margin-top:-325px;
+    opacity:0.3;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.prev:hover,.next:hover {
+    opacity:1;
+}
+
+.prev {
+    background:transparent url(../img/prev.png) no-repeat top left;
+}
+
+.next {
+    background:transparent url(../img/next.png) no-repeat top left;
+}
+
+#sub.servers #container {
+    background:transparent url(../img/bg3.png) no-repeat top left;
+}
+
+#sub.about #container {
+    background:transparent url(../img/bg2.png) no-repeat top left;
+}
+
+#sub.forums #container {
+    background:transparent url(../img/bg4.png) no-repeat top left;
+}
+
+#sub.hurtworld #container {
+    background:transparent url(../img/hurtworld.png) no-repeat top left;
+}
+
+
+
+
+h1 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+}
+
+h2 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+}
+
+h3 {
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+}
+
+
+h4 {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+}
+
+.HomepageTitle,.PageDescription {
+    display:none !important; 
+    font-size:0pt !important;
+}
+
+.Meta .RSS {
+    display:none !important;
+}
+
+.MItem {
+    margin:0 !important;
+}
+
+.forums nav a {
+    color:#fff !important;
+}
+
+.forums nav a:hover {
+    color:#fff !important;
+}
+
+.forums #content a {
+    color:#373b62 !important;
+}
+
+.forums #content a:hover,.forums #content a:active {
+    color:#585d95 !important;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 1100px;
+    height:1200px;
+    position: relative;
+    margin: 10% auto;
+    padding: 60px 95px;
+    background: rgba(255,255,255,0.95);
+}
+.close {
+    background: #ff0000;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 00;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+td {
+    padding-left:25px;
+}
+
+thead tr td {
+    background:#20233a;
+    border:2px solid #20233a;
+    color:#fff;
+    padding-left:25px;
+    letter-spacing:1px;
+}
+
+table tbody tr:nth-child(even) {
+    background:#eee;
+    border-bottom:1px solid #e3e3e3;
+}
+
+hr {
+    border:0;
+    border-top:1px solid #999;
+    margin:60px 0 40px;
+}
+
+[type="radio"]:not(:checked), [type="radio"]:checked,[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative !important;
+    left: 0 !important;
+    visibility:visible !important;
+}
+
+@media screen and (max-width: 820px) {
+    #signin {
+        display:none;
+        opacity:0;
+    }
+}
